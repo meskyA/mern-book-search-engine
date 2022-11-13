@@ -29,7 +29,7 @@ const SavedBooks = () => {
     }
 
     try {
-      const response = await deleteBook({
+       await deleteBook({
         variables: {bookId: bookId},
         update: cache => {
           const data = cache.readQuery({ query: GET_ME });
