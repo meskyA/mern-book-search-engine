@@ -1,7 +1,7 @@
 import React from 'react';
 import { Jumbotron, Container, CardColumns, Card, Button } from 'react-bootstrap';
 
-import { useQuery, useMutation } from '@apollo/react-hooks';
+import { useQuery, useMutation } from '@apollo/client';
 import { GET_ME } from '../utils/queries';
 import { REMOVE_BOOK } from '../utils/mutations';
 import Auth from '../utils/auth';
@@ -9,6 +9,7 @@ import { removeBookId } from '../utils/localStorage';
 
 const SavedBooks = () => {
   const { loading, data } = useQuery(GET_ME);
+  console.log("data")
   const [deleteBook] = useMutation(REMOVE_BOOK);
   const userData = data?.me || {};
 
@@ -31,14 +32,7 @@ const SavedBooks = () => {
     try {
        await deleteBook({
         variables: {bookId: bookId},
-        update: cache => {
-          const data = cache.readQuery({ query: GET_ME });
-          const userDataCache = data.me;
-          const SavedBooksCache = userDataCache.savedBooks;
-          const updatedBooksCache = SavedBooksCache.filter((book) => book.bookId !== bookId);
-          data.me.savedBooks = updatedBooksCache;
-          cache.writeQuery({ query: GET_ME, data: {data: {...data.me.savedBooks}}})
-        }
+
 
       });
 
