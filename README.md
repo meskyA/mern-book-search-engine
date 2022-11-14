@@ -1,5 +1,19 @@
 # 21 MERN: Book Search Engine
 
+
+This app is used for searching for books using the Google books API. A user can signup with username, email and password. After login by with the correct email and password, user can search for books, save them to their chosen list of books and/or remove them.
+
+## Table of Contents
+
+- [Describtion](#description)
+- [Technologies-Used](#technologies used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Questioons](#questions)
+
+
 ## Your Task
 
 Your assignment this week is emblematic of the fact that most modern websites are driven by two things: data and user demands. This shouldn't come as a surprise, as the ability to personalize user data is the cornerstone of real-world web development today. And as user demands evolve, applications need to be more performant.
