@@ -18,14 +18,14 @@ type User {
     username: String
     email: String
     bookCount: Int
-    savedBooks: [Books] 
+    savedBooks: [Book] 
     
 }
-{
-    typyr Query {
+
+    type Query {
         me: User
     }
-}
+
 type Auth {
     token: ID!
     user: User
@@ -41,7 +41,7 @@ input SavedBookInput {
 }
 type Mutation {
     login(email: String! password: String!): Auth 
-    addUser(username: String!, email: String!, password: String!); Auth
+    addUser(username: String!, email: String!, password: String!): Auth
     saveBook(book: SavedBookInput): User
     removeBook(bookId: String!): User
 }`;
