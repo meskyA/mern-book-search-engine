@@ -28,7 +28,8 @@ export const SAVE_BOOK = gql`
 mutation saveBook($book: SavedBookInput!) {
     saveBook(book: $book) {
         username
-        emailbookCount
+        email
+        bookCount
         savedBooks {
             title
             authors
