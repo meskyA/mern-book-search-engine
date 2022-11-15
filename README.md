@@ -31,11 +31,11 @@ license badge
 
 ## Screen Shots
 
-![Screen-Shot](/mern-book-search-engine/Assets/book-search-1.png)
-![Screen-Shot](/mern-book-search-engine/Assets/book-search-2.png)
-![Screen-Shot](/mern-book-search-engine/Assets/book-search-3.png)
-![Screen-Shot](/mern-book-search-engine/Assets/logged-in.png)
-![Screen-Shot](/mern-book-search-engine/Assets/saved-books.png)
+- ![Screen-Shot](/mern-book-search-engine/Assets/book-search-1.png)
+- ![Screen-Shot](/mern-book-search-engine/Assets/book-search-2.png)
+- ![Screen-Shot](/mern-book-search-engine/Assets/book-search-3.png)
+- ![Screen-Shot](/mern-book-search-engine/Assets/logged-in.png)
+- ![Screen-Shot](/mern-book-search-engine/Assets/saved-books.png)
 
 ## Questions
 
