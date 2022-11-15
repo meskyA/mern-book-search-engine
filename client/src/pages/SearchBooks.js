@@ -136,7 +136,7 @@ console.log(error)
                       className='btn-block btn-info'
                       onClick={() => handleSaveBook(book.bookId)}>
                       {savedBookIds?.some((savedBookId) => savedBookId === book.bookId)
-                        ? 'This book has already been saved!'
+                        ? 'This book is sucessfully saved!'
                         : 'Save this Book!'}
                     </Button>
                   )}
