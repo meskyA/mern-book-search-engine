@@ -45,7 +45,7 @@ Please contact me at
 
 ## Deploy links
 
-[Github](https://github.com/meskyA/mern-book-search-engine)
-[Deploy](https://mern-book-search-app-challenge.herokuapp.com/)
+- [Github](https://github.com/meskyA/mern-book-search-engine)
+- [Deploy](https://mern-book-search-app-challenge.herokuapp.com/)
 
 
